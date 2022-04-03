@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('../Fonts/Norse-Bold.otf');
+}
+
+@media screen and (min-width: 1024px){
+  .top-nav {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  }
+}
+
+.top-nav {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.icon-plus-text-container{
+  font-family: 'Norse-Bold';
+  display: flex;
+  align-items: center;
+  width: 205px;
+  height: 60px;
+}
+
+.odin-icon-container {
+  width: 44px;
+  height: 60px;
+}
+
+.odin-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-text {
+  flex: 1;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
