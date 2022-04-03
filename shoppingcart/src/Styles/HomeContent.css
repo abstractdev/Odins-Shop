@@ -1,0 +1,7 @@
+.home-content {
+  background-image:url('../Assets/multi.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
