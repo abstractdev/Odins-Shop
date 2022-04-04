@@ -1,0 +1,18 @@
+.side-nav {
+  background: #D3D3D3;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.side-burger {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.side-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
