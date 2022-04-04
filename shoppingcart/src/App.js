@@ -11,13 +11,6 @@ import Shop from './Components/Shop';
 
 function App(props) {
 
-  const [shopClicked, setShopClicked] = useState(false)
-
-  function handleShopClick() {
-    setShopClicked(true)
-  }
-
-
   return (
     <>
       <BrowserRouter>
@@ -30,7 +23,7 @@ function App(props) {
         </Link>
           <div className="links-container">
             <Link to="/"  className="home-link">Home</Link>
-            <a className="shop-link" href="/shop" onClick={() => handleShopClick()}>Shop</a>
+            <Link to="/shop"  className="shop-link">Shop</Link>
             <a data-testid="cart-link" className="cart-link" href="/cart"><BsCart className='cart-icon' size='23px'/></a>
           </div>
         </nav>
