@@ -9,6 +9,9 @@ function Men({menTees, menHoodies}) {
           <div className="item-image-container">
             <img src={e.image} alt="men's tee"/>
           </div>
+          <div className="item-price-container">
+            <div className="item-price">{e.price.tee}</div>
+          </div>
         </li>
       </div>)
   })
@@ -18,6 +21,9 @@ function Men({menTees, menHoodies}) {
         <li data-testid={`mHoodie${index}`}>
           <div className="item-image-container">
             <img src={e.image} alt="men's hoodie"/>
+          </div>
+          <div className="item-price-container">
+            <div className="item-price">{e.price.hoodie}</div>
           </div>
         </li>
       </div>)

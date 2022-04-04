@@ -9,6 +9,13 @@ const Accessory = (type,image) => {
   return {
     type,
     image,
+    price: {
+      case: 20,
+      mug: 7,
+      pillow: 10,
+      sticker: 5,
+      tote: 10
+    },
     quantity: null
   }
  }

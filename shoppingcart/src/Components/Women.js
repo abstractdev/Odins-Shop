@@ -9,6 +9,9 @@ function Women({womenTees, womenHoodies}) {
           <div className="item-image-container">
             <img src={e.image} alt="women's tee"/>
           </div>
+          <div className="item-price-container">
+            <div className="item-price">{e.price['tee']}</div>
+          </div>
         </li>
       </div>)
   })
@@ -18,6 +21,9 @@ function Women({womenTees, womenHoodies}) {
         <li data-testid={`wHoodie${index}`}>
           <div className="item-image-container">
             <img src={e.image} alt="women's hoodie"/>
+          </div>
+          <div className="item-price-container">
+            <div className="item-price">{e.price.hoodie}</div>
           </div>
         </li>
       </div>)
