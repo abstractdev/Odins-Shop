@@ -1,0 +1,71 @@
+@media screen and (min-width: 1024px){
+  .shop-content-container  {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  }
+}
+
+.shop-container {
+  background: #f3f3f3;
+  display: flex;
+  width: 100%;
+}
+
+.shop-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Norse-Bold';
+  text-align: center;
+}
+
+.shop-header {
+  font-family: 'Norse-Bold';
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.shop-content {
+  box-sizing: border-box;
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  background: #f3f3f3;
+}
+.item-header {
+  text-align: center;
+}
+.men-tee, .men-hoodie, .women-tee, .women-hoodie, .accessory {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Norse';
+  font-weight: 900;
+}
+
+.item-image-container {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+  box-sizing: border-box;
+}
+
+.item-price-container {
+display: flex;
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
+}
