@@ -14,7 +14,8 @@ const Hoodie = (gender,type,color,image) => {
     color,
     image,
     size: null,
-    price: null
+    price: null,
+    quantity: null
   }
  }
 

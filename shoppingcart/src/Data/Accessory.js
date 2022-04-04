@@ -9,6 +9,7 @@ const Accessory = (type,image) => {
   return {
     type,
     image,
+    quantity: null
   }
  }
 

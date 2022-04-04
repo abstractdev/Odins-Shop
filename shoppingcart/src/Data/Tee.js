@@ -18,7 +18,8 @@ const Tee = (gender,type,color,image) => {
    color,
    image,
    size: null,
-   price: null
+   price: null,
+   quantity: null
  }
 }
 export const menOdinTeeWhite = Tee('men', 'odin', 'white', odinMenTeeWhite,)
