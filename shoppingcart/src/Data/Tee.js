@@ -36,5 +36,5 @@ export const womenOdinTeeYellow = Tee('women', 'odin', 'red', odinWomenTeeYellow
 export const womenOdinTeeRuby = Tee('women', 'ruby', 'white', odinWomenTeeRuby)
 export const womenOdinTeeJs = Tee('women', 'js', 'white', odinWomenTeeJs)
 
-export const menTees = [menOdinTeeWhite, menOdinTeeBlue, menOdinTeeGray, menOdinTeeRed, menOdinTeeRuby, menOdinTeeJs]
-export const womenTees = [womenOdinTeeWhite, womenOdinTeePink, womenOdinTeePurple, womenOdinTeeYellow, womenOdinTeeRuby, womenOdinTeeJs]
+export const menTees = [menOdinTeeBlue, menOdinTeeGray, menOdinTeeRed, menOdinTeeWhite, menOdinTeeRuby, menOdinTeeJs]
+export const womenTees = [womenOdinTeePink, womenOdinTeePurple, womenOdinTeeYellow, womenOdinTeeWhite, womenOdinTeeRuby, womenOdinTeeJs]

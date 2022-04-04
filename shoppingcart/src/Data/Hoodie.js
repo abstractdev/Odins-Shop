@@ -28,5 +28,5 @@ export const womenOdinHoodiePink = Hoodie('women', 'odin', 'pink', odinWomenHood
 export const womenOdinHoodiePurple = Hoodie('women', 'odin', 'purple', odinWomenHoodiePurple,)
 export const womenOdinHoodieYellow = Hoodie('women', 'odin', 'yellow', odinWomenHoodieYellow,)
 
-export const menHoodies = [menOdinHoodieWhite, menOdinHoodieBlue, menOdinHoodieGray, menOdinHoodieRed]
-export const womenHoodies = [womenOdinHoodieWhite, womenOdinHoodiePink, womenOdinHoodiePurple, womenOdinHoodieYellow]
+export const menHoodies = [menOdinHoodieBlue, menOdinHoodieGray, menOdinHoodieRed, menOdinHoodieWhite,]
+export const womenHoodies = [ womenOdinHoodiePink, womenOdinHoodiePurple, womenOdinHoodieYellow, womenOdinHoodieWhite,]
