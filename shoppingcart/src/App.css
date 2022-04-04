@@ -3,6 +3,10 @@
   font-family: 'Norse-Bold';
   src: url('./Fonts/Norse-Bold.otf');
 }
+@font-face {
+  font-family: 'Norse';
+  src: url('./Fonts/Norse.otf');
+}
 
 @media screen and (min-width: 1024px){
   .top-nav {
