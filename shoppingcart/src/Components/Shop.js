@@ -7,6 +7,7 @@ import '../Styles/Shop.css'
 function Shop({menTees, womenTees, menHoodies, womenHoodies, accessories}) {
   return (
     <>
+      <div className="shop-header">Odin's Store</div>
       <div className="shop-container">
           <Men menTees={menTees} menHoodies={menHoodies}/>
           <Women womenTees={womenTees} womenHoodies={womenHoodies}/>

@@ -6,6 +6,9 @@ function Men({menTees, menHoodies}) {
     return (
       <div key={`mTee${index}`}className="men-tee">
         <li data-testid={`mTee${index}`}>
+          <div className="item-header-container">
+            <div className="item-header">Men's Tee</div>
+          </div>
           <div className="item-image-container">
             <img src={e.image} alt="men's tee"/>
           </div>
@@ -19,6 +22,9 @@ function Men({menTees, menHoodies}) {
     return (
       <div key={`mHoodie${index}`} className="men-hoodie">
         <li data-testid={`mHoodie${index}`}>
+          <div className="item-header-container">
+            <div className="item-header">Men's Hoodie</div>
+          </div>
           <div className="item-image-container">
             <img src={e.image} alt="men's hoodie"/>
           </div>

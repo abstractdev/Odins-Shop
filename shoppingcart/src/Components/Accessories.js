@@ -21,6 +21,9 @@ function Accessories({accessories}) {
     return (
       <div key={`accessory${index}`} className="accessory">
         <li data-testid={`accessory${index}`}>
+          <div className="item-header-container">
+            <div className="item-header">{e.type}</div>
+          </div>
           <div className="item-image-container">
             <img src={e.image} alt="accessory"/>
           </div>
