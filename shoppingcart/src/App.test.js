@@ -22,3 +22,18 @@ describe("App Component", () => {
     expect(screen.getByTestId("cart-link")).toBeVisible();
   });
 });
+
+describe("Shop Link", () => {
+  it("When clicked, items are displayed on the page", () => {
+    render(<App />);
+    const link = screen.getByRole("link", { name: "Shop" });
+
+    userEvent.click(link);
+
+    expect(screen.getByTestId("mTee0")).toBeVisible();
+    expect(screen.getByTestId("wTee0")).toBeVisible();
+    expect(screen.getByTestId("mHoodie0")).toBeVisible();
+    expect(screen.getByTestId("wHoodie0")).toBeVisible();
+    expect(screen.getByTestId("accessory0")).toBeVisible();
+  });
+});
