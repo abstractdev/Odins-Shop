@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react';
 import userEvent from "@testing-library/user-event";
 import App from './App';
 
-
 describe("App Component", () => {
   it("renders Home Link", () => {
     render(<App />);
@@ -21,6 +20,10 @@ describe("App Component", () => {
     render(<App />);
     expect(screen.getByTestId("cart-link")).toBeVisible();
   });
+  it("renders Footer", () => {
+    render(<App />);
+    expect(screen.getByRole("link", { name: "Contact Us" })).toBeVisible();
+  });
 });
 
 describe("Shop Link", () => {
@@ -35,5 +38,8 @@ describe("Shop Link", () => {
     expect(screen.getByTestId("mHoodie0")).toBeVisible();
     expect(screen.getByTestId("wHoodie0")).toBeVisible();
     expect(screen.getByTestId("accessory0")).toBeVisible();
+    expect(screen.getByRole("link", { name: "Men" })).toBeVisible();
+    expect(screen.getByRole("link", { name: "Women" })).toBeVisible();
+    expect(screen.getByRole("link", { name: "Accessories" })).toBeVisible();
   });
 });
