@@ -4,4 +4,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter {
+  width: 100px;
+  height: 50px;
+  background: #e3b261;
+  border: 3px solid white;
+  border-radius: 10px;
+  opacity: 80%;
+  font-family: 'Norse-Bold';
+  cursor: pointer;
 }
