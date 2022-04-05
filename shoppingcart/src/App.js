@@ -12,6 +12,7 @@ import Accessories from './Components/Accessories';
 import MainNavigation from './Components/MainNavigation';
 import Sidebar from './Components/Sidebar'
 import Footer from './Components/Footer';
+import Details from './Components/Details';
 
 function App(props) {
   const [totalCost, setTotalCost] = useState(0);
@@ -40,7 +41,52 @@ function App(props) {
   const [odinPillow, setodinPillow] = useState(accessories[3]);
   const [odinStickers, setOdinStickers] = useState(accessories[4]);
   const [odinTote, setOdinTote] = useState(accessories[5]);
+  const allStates = [
+    totalCost,
+    menOdinTeeBlue,
+    menOdinTeeGray,
+    menOdinTeeRed,
+    menOdinTeeWhite,
+    menRubyTeeWhite,
+    menJsTeeWhite,
+    womenOdinTeePink,
+    womenOdinTeePurple,
+    womenOdinTeeYellow,
+    womenOdinTeeWhite,
+    womenRubyTeeWhite,
+    womenJsTeeWhite,
+    menOdinHoodieBlue,
+    menOdinHoodieGray,
+    menOdinHoodieRed,
+    womenOdinHoodiePink,
+    womenOdinHoodiePurple,
+    womenOdinHoodieYellow,
+    womenOdinHoodieWhite,
+    odinCase1,
+    odinCase2,
+    odinMug,
+    odinPillow,
+    odinStickers,
+    odinTote
+  ]
 
+  function createCategorizedPage(header, category) {
+    return(
+      <div className="shop-container">
+        <Sidebar/>
+        <div className="shop-content-container">
+          <div className="shop-header">{header}</div>
+          <div className="shop-content">
+            {category}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // function handleCounterClick() {
+
+  // }
   return (
     <>
       <BrowserRouter>
@@ -48,47 +94,13 @@ function App(props) {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop menTees={menTees} womenTees={womenTees} menHoodies={menHoodies} womenHoodies={womenHoodies} accessories={accessories}/>} />
-          <Route path="/shop/men" element={
-            <>
-              <div className="shop-container">
-                <Sidebar/>
-                <div className="shop-content-container">
-                  <div className="shop-header">Odin's Store</div>
-                  <div className="shop-content">
-                      <Men menTees={menTees} menHoodies={menHoodies}/>
-                  </div>
-                </div>
-              </div>
-            </>}
-          />
+          <Route path="/shop/men" element={<>{createCategorizedPage("Men", <Men menTees={menTees} menHoodies={menHoodies}/>)}</>}/>
+          <Route path="/shop/women" element={<>{createCategorizedPage("Women", <Women womenTees={womenTees} womenHoodies={womenHoodies}/>)}</>}/>
+          <Route path="/shop/accessories" element={<>{createCategorizedPage("Accessories", <Accessories accessories={accessories}/>)}</>}/>
+          <Route path="/shop/men/:id" element={<>{createCategorizedPage("", <Details allStates={allStates}/>)}</>}/>
+          <Route path="/shop/women/:id" element={<>{createCategorizedPage("", <Details allStates={allStates}/>)}</>}/>
+          <Route path="/shop/accessories/:id" element={<>{createCategorizedPage("", <Details allStates={allStates}/>)}</>}/>
 
-          <Route path="/shop/women" element={
-            <>
-              <div className="shop-container">
-                <Sidebar/>
-                <div className="shop-content-container">
-                  <div className="shop-header">Odin's Store</div>
-                  <div className="shop-content">
-                    <Women womenTees={womenTees} womenHoodies={womenHoodies}/>
-                  </div>
-                </div>
-              </div>
-            </>}
-          />
-          
-          <Route path="/shop/accessories" element={
-            <>
-              <div className="shop-container">
-                <Sidebar/>
-                <div className="shop-content-container">
-                  <div className="shop-header">Odin's Store</div>
-                  <div className="shop-content">
-                    <Accessories accessories={accessories}/>
-                  </div>
-                </div>
-              </div>
-            </>}
-          />
         </Routes>
         <Footer/>
       </BrowserRouter>
