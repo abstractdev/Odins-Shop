@@ -9,6 +9,7 @@
   background: #f3f3f3;
   display: flex;
   width: 100%;
+  min-height: 100vh;
 }
 
 .shop-content-container {
@@ -50,6 +51,7 @@
   padding: 1rem;
   font-family: 'Norse';
   font-weight: 900;
+  font-size: 1.2rem;
 }
 
 .item-image-container {
