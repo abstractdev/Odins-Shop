@@ -1,4 +1,4 @@
-const Apparel = (type, id, gender, color, theme, price, image, small, medium, large) => {
+const Apparel = (id, gender, type, theme, color, price, image, small, medium, large) => {
   return {
     id,
     gender,
