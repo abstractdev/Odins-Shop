@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../Styles/Sidebar.css'
 import {FiMenu} from "react-icons/fi";
 
@@ -9,9 +9,9 @@ function Sidebar(props) {
       <nav className="side-nav">
         <a href="/"><FiMenu className="side-burger"/></a>
         <div className="side-links-container">
-          <Link to="/shop/men"  className="men-link">Men</Link>
-          <Link to="/shop/women"  className="women-link">Women</Link>
-          <Link to="/shop/accessories"  className="accessories-link">Accessories</Link>
+          <NavLink to="/shop/men"  className="men-link">Men</NavLink>
+          <NavLink to="/shop/women"  className="women-link">Women</NavLink>
+          <NavLink to="/shop/accessories"  className="accessories-link">Accessories</NavLink>
         </div>
       </nav>
     </>
