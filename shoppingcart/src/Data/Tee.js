@@ -20,9 +20,9 @@ export const menOdinTeeWhite = Apparel('mt3', 'men', 'tee', 'odin', 'white', 20,
 export const menRubyTeeWhite = Apparel('mt4','men', 'tee', 'ruby', 'white', 20, odinMenTeeRuby, 10, 10, 10)
 export const menJsTeeWhite = Apparel('mt5','men', 'tee', 'js', 'white', 20, odinMenTeeJs, 10, 10, 10)
 
-export const womenOdinTeePink = Apparel('wt0','women', 'tee', 'odin', 'blue', 20, odinWomenTeePink, 10, 10, 10)
-export const womenOdinTeePurple = Apparel('wt1','women', 'tee', 'odin', 'gray', 20, odinWomenTeePurple, 10, 10, 10)
-export const womenOdinTeeYellow = Apparel('wt2','women', 'tee', 'odin', 'red', 20, odinWomenTeeYellow, 10, 10, 10)
+export const womenOdinTeePink = Apparel('wt0','women', 'tee', 'odin', 'pink', 20, odinWomenTeePink, 10, 10, 10)
+export const womenOdinTeePurple = Apparel('wt1','women', 'tee', 'odin', 'purple', 20, odinWomenTeePurple, 10, 10, 10)
+export const womenOdinTeeYellow = Apparel('wt2','women', 'tee', 'odin', 'yellow', 20, odinWomenTeeYellow, 10, 10, 10)
 export const womenOdinTeeWhite = Apparel('wt3','women', 'tee', 'odin', 'white', 20, odinWomenTeeWhite, 10, 10, 10)
 export const womenRubyTeeWhite = Apparel('wt4','women', 'tee', 'ruby', 'white', 20, odinWomenTeeRuby, 10, 10, 10)
 export const womenJsTeeWhite = Apparel('wt5','women', 'tee', 'js', 'white', 20, odinWomenTeeJs, 10, 10, 10)
