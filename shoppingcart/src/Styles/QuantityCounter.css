@@ -1,0 +1,23 @@
+.counter-container {
+  display: flex;
+  gap: .2em;
+  justify-content: center;
+  align-items: center;
+}
+
+#quantity {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.minus-container, .plus-container {
+  display: flex;
+}
+
+.minus, .plus {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
