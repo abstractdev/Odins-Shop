@@ -13,7 +13,7 @@ function Women({womenTees, womenHoodies}) {
             <img src={e.image} alt="women's tee"/>
           </div>
           <div className="item-price-container">
-            <div className="item-price">{e.price.tee}</div>
+            <div className="item-price">{e.price}</div>
           </div>
         </li>
       </div>)
@@ -29,7 +29,7 @@ function Women({womenTees, womenHoodies}) {
             <img src={e.image} alt="women's hoodie"/>
           </div>
           <div className="item-price-container">
-            <div className="item-price">{e.price.hoodie}</div>
+            <div className="item-price">{e.price}</div>
           </div>
         </li>
       </div>)
