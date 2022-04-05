@@ -1,0 +1,51 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+.icon-plus-text-container{
+  font-family: 'Norse-Bold';
+  display: flex;
+  align-items: center;
+  width: 205px;
+  height: 60px;
+}
+
+.odin-icon-container {
+  width: 44px;
+  height: 60px;
+}
+.odin-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-text {
+  flex: 1;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cart-icon {
+  vertical-align: sub;
+}
