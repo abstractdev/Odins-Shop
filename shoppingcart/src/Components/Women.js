@@ -2,10 +2,10 @@ import React from "react";
 import '../Styles/Shop.css'
 
 function Women({womenTees, womenHoodies}) {
-  const allWomenTees = womenTees.map((e, index) => {
+  const allWomenTees = womenTees.map((e) => {
     return (
-      <div key={`wTee${index}`} className="women-tee">
-        <li data-testid={`wTee${index}`}>
+      <div key={e.id} className="women-tee">
+        <li data-testid={e.id}>
           <div className="item-header-container">
             <div className="item-header">Women's Tee</div>
           </div>
@@ -13,15 +13,15 @@ function Women({womenTees, womenHoodies}) {
             <img src={e.image} alt="women's tee"/>
           </div>
           <div className="item-price-container">
-            <div className="item-price">{e.price['tee']}</div>
+            <div className="item-price">{e.price.tee}</div>
           </div>
         </li>
       </div>)
   })
-  const allWomenHoodies = womenHoodies.map((e, index) => {
+  const allWomenHoodies = womenHoodies.map((e) => {
     return (
-      <div key={`wHoodie${index}`} className="women-hoodie">
-        <li data-testid={`wHoodie${index}`}>
+      <div key={e.id} className="women-hoodie">
+        <li data-testid={e.id}>
           <div className="item-header-container">
             <div className="item-header">Women's Hoodie</div>
           </div>

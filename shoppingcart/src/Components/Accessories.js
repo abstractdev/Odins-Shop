@@ -19,8 +19,8 @@ function Accessories({accessories}) {
         break;
     }
     return (
-      <div key={`accessory${index}`} className="accessory">
-        <li data-testid={`accessory${index}`}>
+      <div key={e.id} className="accessory">
+        <li data-testid={e.id}>
           <div className="item-header-container">
             <div className="item-header">{e.type}</div>
           </div>

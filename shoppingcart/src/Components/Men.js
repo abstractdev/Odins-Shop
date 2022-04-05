@@ -2,10 +2,10 @@ import React from "react";
 import '../Styles/Shop.css'
 
 function Men({menTees, menHoodies}) {
-  const allMenTees = menTees.map((e, index) => {
+  const allMenTees = menTees.map((e) => {
     return (
-      <div key={`mTee${index}`}className="men-tee">
-        <li data-testid={`mTee${index}`}>
+      <div key={e.id}className="men-tee">
+        <li data-testid={e.id}>
           <div className="item-header-container">
             <div className="item-header">Men's Tee</div>
           </div>
@@ -18,10 +18,10 @@ function Men({menTees, menHoodies}) {
         </li>
       </div>)
   })
-  const allMenHoodies = menHoodies.map((e, index) => {
+  const allMenHoodies = menHoodies.map((e) => {
     return (
-      <div key={`mHoodie${index}`} className="men-hoodie">
-        <li data-testid={`mHoodie${index}`}>
+      <div key={e.id} className="men-hoodie">
+        <li data-testid={e.id}>
           <div className="item-header-container">
             <div className="item-header">Men's Hoodie</div>
           </div>

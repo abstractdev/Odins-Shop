@@ -5,8 +5,9 @@ import odinPillowImage from'../Assets/odin-pillow.png'
 import odinStickersImage from'../Assets/odin-stickers.png'
 import odinToteImage from'../Assets/odin-t-w.jpg'
 
-const Accessory = (type,image, quantity) => {
+const Accessory = (id, type,image, quantity) => {
   return {
+    id,
     type,
     image,
     price: {
@@ -20,11 +21,11 @@ const Accessory = (type,image, quantity) => {
   }
  }
 
-export const odinCase1 = Accessory('case', odinPhone1Image, 10)
-export const odinCase2 = Accessory('case', odinPhone2Image, 10)
-export const odinMug = Accessory('mug', odinMugImage, 10)
-export const odinPillow = Accessory('pillow', odinPillowImage, 10)
-export const odinStickers = Accessory('sticker', odinStickersImage, 10)
-export const odinTote = Accessory('tote', odinToteImage, 10)
+export const odinCase1 = Accessory('acc0', 'case', odinPhone1Image, 10)
+export const odinCase2 = Accessory('acc1','case', odinPhone2Image, 10)
+export const odinMug = Accessory('acc2','mug', odinMugImage, 10)
+export const odinPillow = Accessory('acc3','pillow', odinPillowImage, 10)
+export const odinStickers = Accessory('acc4','sticker', odinStickersImage, 10)
+export const odinTote = Accessory('acc5','tote', odinToteImage, 10)
 
 export const accessories = [odinCase1, odinCase2, odinMug, odinPillow, odinStickers, odinTote]
