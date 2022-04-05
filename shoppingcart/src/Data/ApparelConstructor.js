@@ -1,18 +1,19 @@
 
-const Apparel = (gender,type,theme,color,image) => {
+const Apparel = (gender,type,theme,color,image, small, medium, large) => {
   return {
     gender,
     type,
     theme,
     color,
     image,
-    size: null,
     price: {
-      tee: 10,
-      hoodie: 20,
-      accessory: 5
+      tee: 20,
+      hoodie: 30
     },
-    quantity: null
+    small,
+    medium,
+    large,
+    quantity: small+medium+large
   }
 }
 
