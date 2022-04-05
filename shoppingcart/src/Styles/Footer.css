@@ -1,0 +1,28 @@
+.footer {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footer-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-self: center;
+  top: .125em;
+  position: relative;
+}
