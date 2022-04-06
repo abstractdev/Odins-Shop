@@ -1,0 +1,7 @@
+.details-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1rem;
+}
