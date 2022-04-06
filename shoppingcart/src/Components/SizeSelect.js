@@ -4,7 +4,6 @@ import '../Styles/SizeSelect.css'
 function SizeSelect() {
   return (
     <>
-      <form className="form">
         <div className="size-container">
           <div className="size-label-container">
             <label htmlFor="size">Size</label>
@@ -17,7 +16,6 @@ function SizeSelect() {
             </select>
           </div>
         </div>
-      </form>
     </>
   );
 }
