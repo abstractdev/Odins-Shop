@@ -59,6 +59,10 @@ table {
 	border-spacing: 0;
 }
 
+#root {
+	min-width: 100%;
+}
+
 .Shop {
 	display: none;
 }
@@ -69,6 +73,12 @@ display: flex;
 
 .hide {
 	display: none;
+}
+.main-container {
+	background: #f3f3f3;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .shop-container {
