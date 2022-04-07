@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import '../Styles/MainNavigation.css'
 import odinIcon from '../Assets/odinIcon.svg'
-import {BsCart} from 'react-icons/bs'
+import Cart from "./Cart";
 
-function MainNavigation(props) {
+function MainNavigation() {
   return (
     <>
       <nav className="top-nav">
@@ -17,7 +17,7 @@ function MainNavigation(props) {
           <div className="links-container">
             <NavLink to="/"  className="home-link">Home</NavLink>
             <NavLink to="/shop"  className="shop-link">Shop</NavLink>
-            <a data-testid="cart-link" className="cart-link" href="/cart"><BsCart className='cart-icon' size='23px'/></a>
+            <Cart/>
           </div>
         </nav>
     </>
