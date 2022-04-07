@@ -37,6 +37,11 @@ a {
   align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .icon-text {
+    display:none;
+  }
+}
 .links-container {
   display: flex;
   align-items: center;
@@ -45,7 +50,6 @@ a {
   font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
 }
-
-.cart-icon {
-  vertical-align: sub;
+.home-link:hover, .shop-link:hover, .cart-link:hover {
+  opacity: .5;
 }
