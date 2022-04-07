@@ -25,7 +25,7 @@ function CartPage({totalCost, setTotalCost, cartItems, setCartItems}) {
                 <div>Qt {e.cartQuantity}</div>
               </div>
               <div className="cart-item-price-container">
-                <div className="cart-price">${e.price}</div>
+                <div className="cart-price">${e.cartQuantity * e.price}</div>
               </div>
               <div className="cart-item-delete-container" onClick={(event) => deleteCartItem(event)}>
                 <div data-id={i} className="cart-delete"><FiTrash2 className="trash-svg"/></div>
