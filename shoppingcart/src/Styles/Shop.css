@@ -34,10 +34,7 @@
   list-style: none;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  background: #f3f3f3;
+  padding: 1rem;
 }
 .item-header {
   text-align: center;
@@ -47,11 +44,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   padding: 1rem;
   font-family: 'Norse';
   font-weight: 900;
   font-size: 1.2rem;
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.men-tee:hover, .men-hoodie:hover, .women-tee:hover, .women-hoodie:hover, .accessory:hover {
+  transform: scale(1.025);
+  opacity: .9;
 }
 
 .item-image-container {

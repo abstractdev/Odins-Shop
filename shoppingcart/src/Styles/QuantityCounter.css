@@ -1,15 +1,18 @@
 .counter-container {
   display: flex;
+  flex-direction: column;
   gap: .2em;
   justify-content: center;
   align-items: center;
 }
 
 #quantity {
-  width: 2em;
-  height: 2em;
+  width: 32px;
+  height: 32px;
   text-align: center;
-  border: 1px solid black;
+  border: 3px solid black;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 #quantity::-webkit-outer-spin-button,
@@ -20,6 +23,18 @@
 
 #quantity[type=number] {
   -moz-appearance: textfield;
+}
+.minus-input-plus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .minus-container, .plus-container {

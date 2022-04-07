@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 .details-bottom-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
   gap: 2em;
-  padding: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+.size-quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
 }

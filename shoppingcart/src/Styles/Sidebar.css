@@ -6,11 +6,21 @@
   padding-top: 2rem;
   font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
+  gap: 2rem;
+  border: none;
+}
+
+.side-burger-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .side-burger {
+  pointer-events: none;
   align-self: center;
-  font-size: 2rem;
+  color: rgba(156,163,175);
+  font-size: 3rem;
 }
 
 .side-links-container {
@@ -18,4 +28,8 @@
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
+}
+
+.men-link:hover, .women-link:hover, .accessories-link:hover {
+  opacity: .5;
 }
