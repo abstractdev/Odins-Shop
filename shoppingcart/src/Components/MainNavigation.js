@@ -4,7 +4,7 @@ import '../Styles/MainNavigation.css'
 import odinIcon from '../Assets/odinIcon.svg'
 import Cart from "./Cart";
 
-function MainNavigation() {
+function MainNavigation({cartItems}) {
   return (
     <>
       <nav className="top-nav">
@@ -17,7 +17,7 @@ function MainNavigation() {
           <div className="links-container">
             <NavLink to="/"  className="home-link">Home</NavLink>
             <NavLink to="/shop"  className="shop-link">Shop</NavLink>
-            <Cart/>
+            <Cart cartItems={cartItems}/>
           </div>
         </nav>
     </>

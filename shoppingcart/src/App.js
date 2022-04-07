@@ -55,7 +55,7 @@ function App(props) {
   return (
     <>
       <BrowserRouter>
-        <MainNavigation/>
+        <MainNavigation cartItems={cartItems}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop menTees={menTees} womenTees={womenTees} menHoodies={menHoodies} womenHoodies={womenHoodies} accessories={accessories}/>} />
