@@ -6,13 +6,23 @@ import '../Styles/DetailsForm.css'
 import '../Styles/AddCartButton.css'
 
 function DetailsForm({detailsItem, size, setSize, quantity, setQuantity, cartItems, setCartItems, handleSetSize, handleSetQuantity}) {
-  console.log(size);
-console.log(cartItems);
+  console.log(cartItems);
   function handleOnSubmit(event) {
+    console.log(event.target.elements);
     event.preventDefault();
     if (event.target.elements[0].value ==='size') {
       alert('error')
+      return
     }
+    if (!event.target.elements[1].value) {
+      alert('error')
+      return
+    }
+    if (event.target.elements[1].value > 100) {
+      alert('error')
+      return
+    }
+
     setCartItems([...cartItems, {cartSize: size, cartQuantity: quantity, ...detailsItem}])
   }
 
