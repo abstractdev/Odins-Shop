@@ -10,7 +10,6 @@ const Apparel = (id, gender, type, theme, color, price, image, small, medium, la
     small,
     medium,
     large,
-    quantity: small+medium+large
   }
 }
 
