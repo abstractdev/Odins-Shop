@@ -76,6 +76,7 @@ grid-column: 1/2;
 .cart-image{
   width: 100px;
   height: 100px;
+  object-fit: contain;
 }
 
 li {
