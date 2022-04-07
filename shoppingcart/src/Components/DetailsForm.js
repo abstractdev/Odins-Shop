@@ -37,7 +37,9 @@ function DetailsForm({detailsItem, size, setSize, quantity, setQuantity, cartIte
       alert('Error')
       return
     }
-    setCartItems(handleSetCartItems())
+    setCartItems(handleSetCartItems());
+    setSize('');
+    setQuantity(1);
   }
 
   return (
