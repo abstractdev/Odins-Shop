@@ -13,7 +13,9 @@ function CartPage({totalCost, setTotalCost, cartItems, setCartItems}) {
     return (
         <div key={i} className="cart-item-container">
               <div className="cart-item-header-container">
-                <div className="cart-item-header">{`${e.gender}'s ${e.color} ${e.theme} ${e.type}`}</div>
+                {e.category === 'apparel' && <div className="cart-item-header">{`${e.gender}'s ${e.color} ${e.theme} ${e.type}`}</div>}
+                {e.category === 'accessory' && <div className="cart-item-header">{`${e.theme} ${e.type}`}</div>}
+
               </div>
               <div className="cart-item-image-container">
                 <img className="cart-image" src={e.image} alt={`${e.gender}'s ${e.type}`}/>
