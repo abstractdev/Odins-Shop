@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
 .details-bottom-container {
   display: flex;
   justify-content: center;
@@ -10,7 +8,7 @@
   padding-right: 1rem;
   padding-top: 1rem;
   gap: 2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 900;
 }
 

@@ -1,11 +1,11 @@
 .side-nav {
-  background: #D3D3D3;
+  background: #d3d3d3;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   padding-top: 2rem;
   font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   gap: 2rem;
   border: none;
 }
@@ -19,7 +19,7 @@
 .side-burger {
   pointer-events: none;
   align-self: center;
-  color: rgba(156,163,175);
+  color: rgba(156, 163, 175);
   font-size: 3rem;
 }
 
@@ -30,6 +30,14 @@
   margin-top: 1rem;
 }
 
-.men-link:hover, .women-link:hover, .accessories-link:hover {
-  opacity: .5;
+.side-men-link:hover,
+.side-women-link:hover,
+.accessories-link:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+  .side-nav {
+    display: none;
+  }
 }

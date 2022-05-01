@@ -1,0 +1,58 @@
+@media screen and (max-width: 480px) {
+  .mobile-sidebar-top {
+    display: flex;
+  }
+
+  .mobile-icon-plus-text-container {
+    font-family: "Norse-Bold";
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+  }
+
+  .icon-text {
+    font-size: 1.3rem;
+  }
+
+  .mobile-side-nav {
+    background: #f3f3f3;
+    padding: 1rem;
+    max-width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    cursor: zoom-in;
+  }
+
+  .close-mobile-side-nav-container {
+    position: absolute;
+    right: -53px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .close-sidebar-button {
+    color: #f3f3f3;
+    pointer-events: none;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+  }
+
+  .mobile-side-links-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .side-shop-link:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-side-nav {
+    display: none;
+  }
+}

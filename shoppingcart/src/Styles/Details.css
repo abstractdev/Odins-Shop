@@ -5,11 +5,23 @@
   justify-content: center;
   padding: 2rem;
   border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .details-header {
-  font-family: 'Norse-Bold';
+  font-family: "Norse-Bold";
   text-align: center;
   font-size: 3rem;
   padding-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.details-image {
+  transition: transform 0.5s ease;
+}
+
+input[type="checkbox"]:checked ~ label > img {
+  transform: scale(1.9);
 }

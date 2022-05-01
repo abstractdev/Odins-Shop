@@ -1,7 +1,7 @@
-@media screen and (min-width: 1024px){
-  .shop-content-container  {
-  padding-left: 2rem;
-  padding-right: 2rem;
+@media screen and (min-width: 1024px) {
+  .shop-content-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -16,12 +16,12 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-family: 'Norse-Bold';
+  font-family: "Norse-Bold";
   text-align: center;
 }
 
 .shop-header {
-  font-family: 'Norse-Bold';
+  font-family: "Norse-Bold";
   text-align: center;
   font-size: 3rem;
   padding-top: 2rem;
@@ -39,22 +39,30 @@
 .item-header {
   text-align: center;
 }
-.men-tee, .men-hoodie, .women-tee, .women-hoodie, .accessory {
+.men-tee,
+.men-hoodie,
+.women-tee,
+.women-hoodie,
+.accessory {
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  font-family: 'Norse';
+  font-family: "Norse";
   font-weight: 900;
   font-size: 1.2rem;
   border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.men-tee:hover, .men-hoodie:hover, .women-tee:hover, .women-hoodie:hover, .accessory:hover {
+.men-tee:hover,
+.men-hoodie:hover,
+.women-tee:hover,
+.women-hoodie:hover,
+.accessory:hover {
   transform: scale(1.025);
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .item-image-container {
@@ -69,8 +77,8 @@ img {
 }
 
 .item-price-container {
-display: flex;
-align-items: center;
-justify-content: center;
-box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }

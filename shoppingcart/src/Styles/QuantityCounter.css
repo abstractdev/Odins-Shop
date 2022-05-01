@@ -1,7 +1,7 @@
 .counter-container {
   display: flex;
   flex-direction: column;
-  gap: .2em;
+  gap: 0.2em;
   justify-content: center;
   align-items: center;
 }
@@ -21,7 +21,7 @@
   margin: 0;
 }
 
-#quantity[type=number] {
+#quantity[type="number"] {
   -moz-appearance: textfield;
 }
 .minus-input-plus-container {
@@ -37,12 +37,14 @@
   align-items: center;
 }
 
-.minus-container, .plus-container {
+.minus-container,
+.plus-container {
   display: flex;
   cursor: pointer;
 }
 
-.minus, .plus {
+.minus,
+.plus {
   width: 2em;
   height: 2em;
   pointer-events: none;
