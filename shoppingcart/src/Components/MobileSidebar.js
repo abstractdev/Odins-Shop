@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 import { AiTwotoneLeftSquare } from "react-icons/ai";
 import odinIcon from "../Assets/odinIcon.svg";
 
-function MobileSidebar({ mobileSidebarIsOpen, setMobileSidebarIsOpen }) {
+function MobileSidebar({ mobileSidebarIsOpen, setMobileSidebarIsOpen, theme }) {
   function handleCloseMobileSideNav(event) {
     setMobileSidebarIsOpen(!mobileSidebarIsOpen);
   }
   return (
-    <nav className="mobile-side-nav">
+    <nav className="mobile-side-nav" data-theme={theme}>
       <div className="mobile-sidebar-top">
         <NavLink to="/" className="mobile-icon-plus-text-container">
           <div className="odin-icon-container">

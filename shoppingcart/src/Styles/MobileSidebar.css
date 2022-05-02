@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 510px) {
   .mobile-sidebar-top {
     display: flex;
   }
@@ -16,10 +16,9 @@
   }
 
   .mobile-side-nav {
-    background: #f3f3f3;
+    background-color: var(--secondary);
     padding: 1rem;
     max-width: 50%;
-    box-sizing: border-box;
     position: relative;
     cursor: zoom-in;
   }
@@ -28,7 +27,6 @@
     position: absolute;
     right: -53px;
     cursor: pointer;
-    box-sizing: border-box;
   }
 
   .close-sidebar-button {
@@ -36,7 +34,6 @@
     pointer-events: none;
     width: 60px;
     height: 60px;
-    box-sizing: border-box;
   }
 
   .mobile-side-links-container {
@@ -51,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 510px) {
   .mobile-side-nav {
     display: none;
   }

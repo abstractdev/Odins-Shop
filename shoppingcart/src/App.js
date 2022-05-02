@@ -29,6 +29,12 @@ function App(props) {
   const [size, setSize] = useState("");
   const [quantity, setQuantity] = useState(1);
   const [mobileSidebarIsOpen, setMobileSidebarIsOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
+
+  function handleSetTheme() {
+  setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
+  console.log('something');
+  }
 
   function toggleMobileSidebar() {
     setMobileSidebarIsOpen(!mobileSidebarIsOpen);
@@ -36,7 +42,7 @@ function App(props) {
 
   function createCategorizedPage(header, category) {
     return (
-      <div className="shop-container">
+      <div className="shop-container" data-theme={theme}>
         <Sidebar />
         <div className="shop-content-container">
           <div className="shop-header">{header}</div>
@@ -66,6 +72,8 @@ function App(props) {
       <MainNavigation
         cartItems={cartItems}
         toggleMobileSidebar={toggleMobileSidebar}
+        theme={theme}
+        handleSetTheme={handleSetTheme}
       />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -78,6 +86,7 @@ function App(props) {
               menHoodies={menHoodies}
               womenHoodies={womenHoodies}
               accessories={accessories}
+              theme={theme}
             />
           }
         />
@@ -87,7 +96,7 @@ function App(props) {
             <>
               {createCategorizedPage(
                 "Men",
-                <Men menTees={menTees} menHoodies={menHoodies} />
+                <Men menTees={menTees} menHoodies={menHoodies}/>
               )}
             </>
           }
@@ -98,7 +107,7 @@ function App(props) {
             <>
               {createCategorizedPage(
                 "Women",
-                <Women womenTees={womenTees} womenHoodies={womenHoodies} />
+                <Women womenTees={womenTees} womenHoodies={womenHoodies}/>
               )}
             </>
           }
@@ -109,7 +118,7 @@ function App(props) {
             <>
               {createCategorizedPage(
                 "Accessories",
-                <Accessories accessories={accessories} />
+                <Accessories accessories={accessories}/>
               )}
             </>
           }
@@ -181,25 +190,27 @@ function App(props) {
           path="/cart"
           element={
             <>
-              <div className="main-container">
+              <div className="main-container" data-theme={theme}>
                 <Sidebar />
                 <CartPage
                   totalCost={totalCost}
                   setTotalCost={setTotalCost}
                   cartItems={cartItems}
                   setCartItems={setCartItems}
+                  theme={theme}
                 />
               </div>
             </>
           }
         />
       </Routes>
-      <Footer />
+      <Footer theme={theme}/>
       {mobileSidebarIsOpen ? (
         <div className="modal-container show">
           <MobileSidebar
             mobileSidebarIsOpen={mobileSidebarIsOpen}
             setMobileSidebarIsOpen={setMobileSidebarIsOpen}
+            theme={theme}
           />
         </div>
       ) : (
@@ -207,6 +218,7 @@ function App(props) {
           <MobileSidebar
             mobileSidebarIsOpen={mobileSidebarIsOpen}
             setMobileSidebarIsOpen={setMobileSidebarIsOpen}
+            theme={theme}
           />
         </div>
       )}

@@ -6,7 +6,7 @@
 }
 
 .shop-container {
-  background: #f3f3f3;
+  background: var(--primary);
   display: flex;
   width: 100%;
   min-height: 100vh;
@@ -29,7 +29,6 @@
 }
 
 .shop-content {
-  box-sizing: border-box;
   display: grid;
   list-style: none;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -44,7 +43,6 @@
 .women-tee,
 .women-hoodie,
 .accessory {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,19 +64,16 @@
 }
 
 .item-image-container {
-  box-sizing: border-box;
   padding: 1rem;
 }
 
 img {
   max-width: 200px;
   max-height: 200px;
-  box-sizing: border-box;
 }
 
 .item-price-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
 }

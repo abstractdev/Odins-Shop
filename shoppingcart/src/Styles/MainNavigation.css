@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  background-color: var(--headerFooter);
+  color: var(--text);
 }
 
 a {
@@ -17,8 +17,7 @@ a {
   font-family: "Norse-Bold";
   display: flex;
   align-items: center;
-  width: 205px;
-  height: 60px;
+  gap: 0.5rem;
 }
 
 .odin-icon-container {
@@ -31,8 +30,8 @@ a {
 }
 
 .icon-text {
-  flex: 0.7;
-  font-size: 1.7rem;
+  flex: 1;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,9 +75,10 @@ a {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 510px) {
   .links-container {
     flex: 1;
+    gap: 1rem;
     justify-content: space-between;
   }
   .shop-link {

@@ -7,10 +7,10 @@ import { FiFacebook } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { FiInfo } from "react-icons/fi";
 
-function Footer(props) {
+function Footer({ theme }) {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" data-theme={theme}>
         <div className="socials-links">
           <a href="http://www.github.com/abstractdev">
             <FiInstagram />

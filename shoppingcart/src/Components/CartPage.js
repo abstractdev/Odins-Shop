@@ -3,7 +3,7 @@ import "../Styles/CartPage.css";
 import { FiTrash2 } from "react-icons/fi";
 import MainButton from "./MainButton";
 
-function CartPage({ totalCost, setTotalCost, cartItems, setCartItems }) {
+function CartPage({ cartItems, setCartItems, theme }) {
   const text = "Checkout";
   function deleteCartItem(event) {
     const filtered = cartItems.filter((e, i) => {
@@ -67,7 +67,7 @@ function CartPage({ totalCost, setTotalCost, cartItems, setCartItems }) {
 
   return (
     <>
-      <div className="cart-container">
+      <div className="cart-container" data-theme={theme}>
         <div className="cart-title">Cart</div>
         <div className="cart-content-container">
           {cartContent}
@@ -86,10 +86,7 @@ function CartPage({ totalCost, setTotalCost, cartItems, setCartItems }) {
                   </div>
                   <div className="checkout-shipping-value">$5</div>
                   <div className="checkout-button-container">
-                    <MainButton
-                      text={text}
-                      onClick={(event) => event.preventDefault()}
-                    />
+                    <MainButton text={text} style={{ pointerEvents: "none" }} />
                   </div>
                 </div>
               </form>

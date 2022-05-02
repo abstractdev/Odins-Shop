@@ -12,7 +12,6 @@
   text-align: center;
   border: 3px solid black;
   border-radius: 3px;
-  box-sizing: border-box;
 }
 
 #quantity::-webkit-outer-spin-button,

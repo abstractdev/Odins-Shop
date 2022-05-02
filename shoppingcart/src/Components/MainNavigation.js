@@ -4,11 +4,17 @@ import "../Styles/MainNavigation.css";
 import odinIcon from "../Assets/odinIcon.svg";
 import Cart from "./Cart";
 import { FiMenu } from "react-icons/fi";
+import ThemeToggleButton from "./ThemeToggleButton";
 
-function MainNavigation({ cartItems, toggleMobileSidebar }) {
+function MainNavigation({
+  cartItems,
+  toggleMobileSidebar,
+  theme,
+  handleSetTheme,
+}) {
   return (
     <>
-      <nav className="top-nav">
+      <nav className="top-nav" data-theme={theme}>
         <NavLink to="/" className="icon-plus-text-container">
           <div className="odin-icon-container">
             <img className="odin-icon" src={odinIcon} alt="icon" />
@@ -23,6 +29,7 @@ function MainNavigation({ cartItems, toggleMobileSidebar }) {
               <img className="mobile-odin-icon" src={odinIcon} alt="icon" />
             </div>
           </NavLink>
+          <ThemeToggleButton handleSetTheme={handleSetTheme} />
           <NavLink to="/" className="home-link">
             Home
           </NavLink>

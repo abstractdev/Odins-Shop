@@ -5,10 +5,17 @@ import Accessories from "./Accessories";
 import Sidebar from "./Sidebar";
 import "../Styles/Shop.css";
 
-function Shop({ menTees, womenTees, menHoodies, womenHoodies, accessories }) {
+function Shop({
+  menTees,
+  womenTees,
+  menHoodies,
+  womenHoodies,
+  accessories,
+  theme,
+}) {
   return (
     <>
-      <div className="shop-container">
+      <div className="shop-container" data-theme={theme}>
         <Sidebar />
         <div className="shop-content-container">
           <div className="shop-header">Odin's Shop</div>

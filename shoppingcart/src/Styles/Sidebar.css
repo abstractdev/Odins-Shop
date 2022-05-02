@@ -1,5 +1,5 @@
 .side-nav {
-  background: #d3d3d3;
+  background: var(--secondary);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -36,7 +36,7 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 510px) {
   .side-nav {
     display: none;
   }

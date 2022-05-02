@@ -4,6 +4,8 @@
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  background-color: var(--headerFooter);
+  color: var(--text);
 }
 
 .footer-links-container {

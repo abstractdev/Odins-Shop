@@ -14,18 +14,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-:root {
-  --headerBg: #fff,
-  --footerBg: #fff,
-  --sidebarBg: #d3d3d3,
-  --contentBg: #f3f3f3,
-  --text: #000000
-}
-[data-theme='dark'] {
-  --headerBg: #181a1b,
-  --footerBg: #181a1b,
-  --sidebarBg: #313517,
-  --contentBg: #1f2123,
-  --text: #e8e6e3
-}
