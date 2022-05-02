@@ -14,7 +14,7 @@ function MainNavigation({
 }) {
   return (
     <>
-      <nav className="top-nav" data-theme={theme}>
+      <nav className="top-nav" data-theme={theme} data-testid="nav">
         <NavLink to="/" className="icon-plus-text-container">
           <div className="odin-icon-container">
             <img className="odin-icon" src={odinIcon} alt="icon" />

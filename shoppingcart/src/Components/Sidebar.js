@@ -14,6 +14,7 @@ function Sidebar(props) {
       <nav className="side-nav">
         <div
           className="side-burger-container"
+          data-testid="side-burger-container"
           onClick={(event) => toggleSidebar(event)}
         >
           <FiMenu className="side-burger" />

@@ -9,7 +9,11 @@ function MobileSidebar({ mobileSidebarIsOpen, setMobileSidebarIsOpen, theme }) {
     setMobileSidebarIsOpen(!mobileSidebarIsOpen);
   }
   return (
-    <nav className="mobile-side-nav" data-theme={theme}>
+    <nav
+      data-testid="mobile-sidebar"
+      className="mobile-side-nav"
+      data-theme={theme}
+    >
       <div className="mobile-sidebar-top">
         <NavLink to="/" className="mobile-icon-plus-text-container">
           <div className="odin-icon-container">
@@ -22,6 +26,7 @@ function MobileSidebar({ mobileSidebarIsOpen, setMobileSidebarIsOpen, theme }) {
         <div
           className="close-mobile-side-nav-container"
           onClick={(event) => handleCloseMobileSideNav(event)}
+          data-testid="close-mobile-sidebar"
         >
           <AiTwotoneLeftSquare className="close-sidebar-button" />
         </div>

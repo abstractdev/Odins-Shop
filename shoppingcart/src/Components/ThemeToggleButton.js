@@ -6,7 +6,11 @@ function ThemeToggleButton({ handleSetTheme }) {
     <>
       <label class="toggle-switch" for="toggle-input">
         <input id="toggle-input" type="checkbox" />
-        <div class="toggle-switch__control" onClick={handleSetTheme}></div>
+        <div
+          data-testid="toggle"
+          class="toggle-switch__control"
+          onClick={handleSetTheme}
+        ></div>
       </label>
     </>
   );
