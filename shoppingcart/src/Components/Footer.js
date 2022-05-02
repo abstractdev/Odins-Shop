@@ -21,7 +21,7 @@ function Footer({ theme }) {
           <a href="http://www.github.com/abstractdev">
             <FiFacebook />
           </a>
-          <a href="http://www.github.com/abstractdev">
+          <a href="http://www.github.com/abstractdev" data-testid="github">
             <FiGithub />
           </a>
         </div>
@@ -32,7 +32,11 @@ function Footer({ theme }) {
             </div>
             <div className="aboutus-text-container">About Us</div>
           </a>
-          <a href="http://www.github.com/abstractdev" className="contact-link">
+          <a
+            href="http://www.github.com/abstractdev"
+            className="contact-link"
+            data-testid="contact"
+          >
             <div className="contact-icon-container">
               <FiMail className="contact-icon" />
             </div>
