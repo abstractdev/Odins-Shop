@@ -1,5 +1,5 @@
 # Odin's Shop
-![Alt text](./shop1.png "Title")
+![Alt text](./shop1.png "Odin's Shop")
 ============
 
 My take on a merch store for TheOdinProject.com
