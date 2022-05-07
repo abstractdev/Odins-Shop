@@ -14,7 +14,7 @@ function CartPage({ cartItems, setCartItems, theme }) {
 
   function getCartTotalPrice() {
     const cartTotalPrice = cartItems
-      .map((e) => e.price)
+      .map((e) => e.price * e.cartQuantity)
       .reduce((acc, cv) => {
         return acc + cv;
       }, 0);
