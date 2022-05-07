@@ -8,7 +8,7 @@ function ThemeToggleButton({ handleSetTheme }) {
         <input id="toggle-input" type="checkbox" />
         <div
           data-testid="toggle"
-          class="toggle-switch__control"
+          class="toggle"
           onClick={handleSetTheme}
         ></div>
       </label>

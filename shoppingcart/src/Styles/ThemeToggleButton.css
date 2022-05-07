@@ -6,7 +6,7 @@
   display: none;
 }
 
-.toggle-switch__control {
+.toggle {
   width: 40px;
   height: 14px;
   border-radius: 7px;
@@ -19,7 +19,7 @@
   margin: 50px auto;
 }
 
-.toggle-switch__control::after {
+.toggle::after {
   content: "";
   display: block;
 
@@ -36,6 +36,6 @@
   transition: left 0.25s;
 }
 
-#toggle-input:checked + .toggle-switch__control::after {
+#toggle-input:checked + .toggle::after {
   left: 21px;
 }
