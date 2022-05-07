@@ -15,7 +15,7 @@ function MainNavigation({
   return (
     <>
       <nav className="top-nav" data-theme={theme} data-testid="nav">
-        <NavLink to="/" className="icon-plus-text-container">
+        <NavLink to="/OdinsShop" className="icon-plus-text-container">
           <div className="odin-icon-container">
             <img className="odin-icon" src={odinIcon} alt="icon" />
           </div>
@@ -24,13 +24,13 @@ function MainNavigation({
           </div>
         </NavLink>
         <div className="links-container">
-          <NavLink to="/">
+          <NavLink to="/OdinsShop">
             <div className="mobile-odin-icon-container">
               <img className="mobile-odin-icon" src={odinIcon} alt="icon" />
             </div>
           </NavLink>
           <ThemeToggleButton handleSetTheme={handleSetTheme} />
-          <NavLink to="/" className="home-link">
+          <NavLink to="/OdinsShop" className="home-link">
             Home
           </NavLink>
           <NavLink to="/shop" className="shop-link">

@@ -76,7 +76,7 @@ function App() {
         handleSetTheme={handleSetTheme}
       />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/OdinsShop" element={<Home />} />
         <Route
           path="/shop"
           element={
