@@ -20,6 +20,7 @@ My take on a merch store for TheOdinProject.com
 - Mobile sidebar with nifty close tab
 ## Built With
 - React
+- React Router
 - React Icons
 - React Testing Library
 - Vanilla CSS
