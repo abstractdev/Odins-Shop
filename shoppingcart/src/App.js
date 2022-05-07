@@ -16,7 +16,7 @@ import Details from "./Components/Details";
 import CartPage from "./Components/CartPage";
 import MobileSidebar from "./Components/MobileSidebar";
 
-function App(props) {
+function App() {
   const [totalCost, setTotalCost] = useState(0);
   const [items, setItems] = useState([
     ...menTees,
@@ -29,11 +29,11 @@ function App(props) {
   const [size, setSize] = useState("");
   const [quantity, setQuantity] = useState(1);
   const [mobileSidebarIsOpen, setMobileSidebarIsOpen] = useState(false);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
 
   function handleSetTheme() {
-  setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
-  console.log('something');
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    console.log("something");
   }
 
   function toggleMobileSidebar() {
@@ -96,7 +96,7 @@ function App(props) {
             <>
               {createCategorizedPage(
                 "Men",
-                <Men menTees={menTees} menHoodies={menHoodies}/>
+                <Men menTees={menTees} menHoodies={menHoodies} />
               )}
             </>
           }
@@ -107,7 +107,7 @@ function App(props) {
             <>
               {createCategorizedPage(
                 "Women",
-                <Women womenTees={womenTees} womenHoodies={womenHoodies}/>
+                <Women womenTees={womenTees} womenHoodies={womenHoodies} />
               )}
             </>
           }
@@ -118,7 +118,7 @@ function App(props) {
             <>
               {createCategorizedPage(
                 "Accessories",
-                <Accessories accessories={accessories}/>
+                <Accessories accessories={accessories} />
               )}
             </>
           }
@@ -204,7 +204,7 @@ function App(props) {
           }
         />
       </Routes>
-      <Footer theme={theme}/>
+      <Footer theme={theme} />
       {mobileSidebarIsOpen ? (
         <div className="modal-container show">
           <MobileSidebar
