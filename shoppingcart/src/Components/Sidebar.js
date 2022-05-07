@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../Styles/Sidebar.css";
 import { FiMenu } from "react-icons/fi";
 
-function Sidebar(props) {
+function Sidebar() {
   const [sidebarClicked, setSidebarClicked] = useState(false);
   function toggleSidebar(event) {
     event.preventDefault();
