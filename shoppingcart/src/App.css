@@ -21,7 +21,7 @@
   --text: #000000;
   box-sizing: border-box;
 }
-[data-theme='dark'] {
+[data-theme="dark"] {
   --primary: #1f2123;
   --secondary: #313537;
   --headerFooter: #181a1b;
@@ -170,6 +170,7 @@ table {
   display: flex;
   width: 100%;
   min-height: 100vh;
+  transition: background-color 0.25s ease-in;
 }
 
 .shop-container {
@@ -178,6 +179,7 @@ table {
   display: flex;
   width: 100%;
   height: 100%;
+  transition: background-color 0.25s ease-in;
 }
 
 .modal-container.show {
