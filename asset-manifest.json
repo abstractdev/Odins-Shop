@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OdinsShop/static/css/main.19a7851e.css",
-    "main.js": "/OdinsShop/static/js/main.4b2e4bc0.js",
+    "main.js": "/OdinsShop/static/js/main.28c434db.js",
     "static/media/odin-m-h-w.png": "/OdinsShop/static/media/odin-m-h-w.4d2a014a03a6def03840.png",
     "static/media/multi.jpg": "/OdinsShop/static/media/multi.024f416a73aa036fbf6d.jpg",
     "static/media/odin-m-h-b.png": "/OdinsShop/static/media/odin-m-h-b.43e8b99033c4a46654a4.png",
@@ -34,10 +34,10 @@
     "static/media/odinIcon.svg": "/OdinsShop/static/media/odinIcon.dc89336c62f77e7ba633a8e80cb33a59.svg",
     "index.html": "/OdinsShop/index.html",
     "main.19a7851e.css.map": "/OdinsShop/static/css/main.19a7851e.css.map",
-    "main.4b2e4bc0.js.map": "/OdinsShop/static/js/main.4b2e4bc0.js.map"
+    "main.28c434db.js.map": "/OdinsShop/static/js/main.28c434db.js.map"
   },
   "entrypoints": [
     "static/css/main.19a7851e.css",
-    "static/js/main.4b2e4bc0.js"
+    "static/js/main.28c434db.js"
   ]
 }
