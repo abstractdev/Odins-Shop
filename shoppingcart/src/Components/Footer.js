@@ -12,27 +12,28 @@ function Footer({ theme }) {
     <>
       <footer className="footer" data-theme={theme}>
         <div className="socials-links">
-          <a href="http://www.github.com/abstractdev">
+          <a target="_blank" rel="noreferrer" href="http://www.github.com/abstractdev">
             <FiInstagram />
           </a>
-          <a href="http://www.github.com/abstractdev">
+          <a target="_blank" rel="noreferrer"  href="http://www.github.com/abstractdev">
             <FiTwitter />
           </a>
-          <a href="http://www.github.com/abstractdev">
+          <a target="_blank" rel="noreferrer"  href="http://www.github.com/abstractdev">
             <FiFacebook />
           </a>
-          <a href="http://www.github.com/abstractdev" data-testid="github">
+          <a target="_blank" rel="noreferrer"  href="http://www.github.com/abstractdev" data-testid="github">
             <FiGithub />
           </a>
         </div>
         <div className="footer-links-container">
-          <a href="http://www.github.com/abstractdev" className="aboutus-link">
+          <a target="_blank" rel="noreferrer"  href="http://www.github.com/abstractdev" className="aboutus-link">
             <div className="aboutus-icon-container">
               <FiInfo className="aboutus-icon" />
             </div>
             <div className="aboutus-text-container">About Us</div>
           </a>
           <a
+            target="_blank" rel="noreferrer" 
             href="http://www.github.com/abstractdev"
             className="contact-link"
             data-testid="contact"
