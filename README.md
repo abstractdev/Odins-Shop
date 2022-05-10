@@ -1,7 +1,8 @@
 # Odin's Shop
-![Alt text](./shop1.png "Odin's Shop")
+[![Odin's Shop](/shop1.png)](https://abstractdev.github.io/OdinsShop/)
 ============
 
+[Live Demo](https://abstractdev.github.io/OdinsShop/)</br>
 My take on a merch store for TheOdinProject.com
 
 ---
