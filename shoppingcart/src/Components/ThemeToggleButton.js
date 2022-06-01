@@ -4,11 +4,11 @@ import "../Styles/ThemeToggleButton.css";
 function ThemeToggleButton({ handleSetTheme }) {
   return (
     <>
-      <label class="toggle-switch" for="toggle-input">
+      <label className="toggle-switch" htmlFor="toggle-input">
         <input id="toggle-input" type="checkbox" />
         <div
           data-testid="toggle"
-          class="toggle"
+          className="toggle"
           onClick={handleSetTheme}
         ></div>
       </label>
