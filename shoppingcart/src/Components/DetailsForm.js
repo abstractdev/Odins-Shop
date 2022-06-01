@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SizeSelect from "./SizeSelect";
 import QuantityCounter from "./QuantityCounter";
 import MainButton from "./MainButton";
@@ -15,6 +15,7 @@ function DetailsForm({
   handleSetSize,
   handleSetQuantity,
 }) {
+  const [hasBeenAdded, setHasBeenAdded] = useState(false);
   const text = "Add To Cart";
 
   function handleSetCartItems() {
@@ -61,6 +62,10 @@ function DetailsForm({
     setCartItems(handleSetCartItems());
     setSize("");
     setQuantity(1);
+    setHasBeenAdded(true);
+    setTimeout(() => {
+      setHasBeenAdded(false);
+    }, 1000);
   }
 
   return (
@@ -83,6 +88,7 @@ function DetailsForm({
         </div>
         <div className="add-cart-button-container">
           <MainButton text={text} />
+          {hasBeenAdded && <span className="added-to-cart">Added</span>}
         </div>
       </div>
     </form>

@@ -18,3 +18,14 @@
   justify-content: center;
   gap: 2em;
 }
+
+.add-cart-button-container {
+  display: flex;
+  flex-direction: column;
+}
+.added-to-cart {
+  color: #fff;
+  background-color: #cc9543;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}

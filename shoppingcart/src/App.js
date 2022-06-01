@@ -33,7 +33,6 @@ function App() {
 
   function handleSetTheme() {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
-    console.log("something");
   }
 
   function toggleMobileSidebar() {
